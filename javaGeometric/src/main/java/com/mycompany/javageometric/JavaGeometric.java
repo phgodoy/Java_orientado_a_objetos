@@ -26,5 +26,11 @@ public class JavaGeometric {
     System.out.println(areaX);
     System.out.println(areaY);
     //double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+    double delta = x.delta();
+     System.out.println(delta);
+     
+     x.getXs(delta);
+    
+    
     }
 }
