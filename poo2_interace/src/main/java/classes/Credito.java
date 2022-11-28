@@ -3,8 +3,7 @@ package classes;
 
 
 public class Credito extends Movimento{
-    
-    
+   
     private String descOrigem;
     private String referencia;
     

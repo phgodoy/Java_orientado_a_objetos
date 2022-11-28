@@ -7,6 +7,8 @@ public class JavaGeometric {
     public static void main(String[] args) {
     Locale.setDefault(Locale.US);
     Scanner sc = new Scanner(System.in);
+    
+    // Triangle calculation!
     Triangle x, y;
     x = new Triangle();
     y = new Triangle();
@@ -27,10 +29,18 @@ public class JavaGeometric {
     System.out.println(areaY);
     //double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
     double delta = x.delta();
-     System.out.println(delta);
-     
-     x.getXs(delta);
+    System.out.println(delta);
+    x.getXs(delta);
     
+    //Rectangle calculation!
+    Rectangle rectangle = new Rectangle();
+    System.out.println("Enter the Width of rectangle: ");
+    rectangle.setWidth(sc.nextDouble());
+    System.out.println("Enter the Height of rectangle: ");
+    rectangle.setHeight(sc.nextDouble());
+    rectangle.Area();
+    rectangle.Diagonal();
+    rectangle.Perimeter();
     
     }
 }
